@@ -9,7 +9,7 @@ const ChatPage = () => (
   	<h1>Chat Here!!</h1>
     <div className='messages'>
       {data.messages.map((message, index) => (
-        <MessageLine message={message} key={index} />
+        <MessageLine {...message} key={index} />
       ))}
     </div>
     <MessageInput />
