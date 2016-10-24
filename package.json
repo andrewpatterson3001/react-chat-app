@@ -18,8 +18,9 @@
     "axios": "0.9.1",
     "express": "4.13.4",
     "lodash": "4.6.1",
-    "react": "^0.14.7",
-    "react-dom": "^0.14.7",
+    "material-ui": "^0.16.1",
+    "react": "^15.3.2",
+    "react-dom": "^15.3.2",
     "react-redux": "^4.4.0",
     "react-router": "^2.0.0",
     "redux": "^3.3.1"
@@ -45,7 +46,7 @@
     "json-loader": "^0.5.4",
     "mocha": "^2.4.5",
     "nyc": "^6.0.0",
-    "react-addons-test-utils": "^0.14.7",
+    "react-addons-test-utils": "^15.3.2",
     "sinon": "^1.17.3",
     "webpack": "^1.12.13"
   }
