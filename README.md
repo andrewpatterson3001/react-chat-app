@@ -18,6 +18,10 @@ If you'd like to run this application:
 
 **What I'd like to try next:**
 
--- Add tests and propTypes validations
+-- ~~Add tests~~ and propTypes validations
 
 -- Organize Reducers
+
+-- Rails Backend
+
+-- Host it
