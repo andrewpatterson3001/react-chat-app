@@ -1,6 +1,6 @@
 const React = require('react')
 const MessageLine = require('./MessageLine')
-const data = require('../public/data')
+const { Link } = require('react-router')
 
 class ChatPage extends React.Component {
 	constructor (props) {
@@ -21,10 +21,11 @@ class ChatPage extends React.Component {
 	render () {
 		return (
 			<div className='container'>
+				<Link to='/'> Back </Link>
   				<h1>Chat Here!!</h1>
   				<h3>Logged in as {this.state.loggedUser}.</h3>
     			<div className='messages'>
-      				{data.messages.map((message, index) => (
+      				{this.props.route.messages.map((message, index) => (
         				<MessageLine {...message} key={index} />
       				))}
     			</div>
@@ -35,3 +36,7 @@ class ChatPage extends React.Component {
 }
 
 module.exports = ChatPage
+
+ChatPage.propTypes = {
+  messages: React.PropTypes.arrayOf(React.PropTypes.object)
+}
