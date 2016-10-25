@@ -10,7 +10,7 @@ const App = () => (
   <Router history={hashHistory}>
     <Route path='/' component={Layout}>
       <IndexRoute component={Landing} />
-      <Route path='/chat' component={ChatPage} />
+      <Route path='/chat/:user' component={ChatPage} />
     </Route>
   </Router>
 )
